@@ -9,7 +9,7 @@ app.use(cors());
 app.use(morgan('dev'));
 
 app.listen(app.get('port') , () => {
-  console.log('Server is running on port 3000');
+  console.log('Server is running on port '+app.get('port'));
 });
 
 app.get('/', (req, res) => {
